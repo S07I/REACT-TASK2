@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { create, all } from 'mathjs'; // Import mathjs
+import { create, all } from 'math.js'; // Import mathjs
 // import './Calculator.css';
 
 const math = create(all);
