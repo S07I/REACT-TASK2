@@ -1,0 +1,74 @@
+/* Calculator.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3caee7, #86e141); /* Replace with your preferred colors */
+    min-height: 100vh; /* Ensures the gradient covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Set the text color for better visibility */
+  }
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 1px;
+    background-color: #000; /* Set the background color to black */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Set the text color to white */
+  }
+  
+  .display {
+    text-align: right; 
+    /* margin-right: 5px; */
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 60px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background-color: #032d70; /* Set the input area background color to dark blue */
+    color: #fff; /* Set the text color to white */
+  }
+/*   
+  .result {
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background-color: #0d4eb9; /* Set the input area background color to dark blue 
+    color: #fff;
+  } */
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 43px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
