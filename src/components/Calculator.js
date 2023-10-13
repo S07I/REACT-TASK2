@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { create, all } from 'math.js'; // Import mathjs
-// import './Calculator.css';
+import './Calculator.css';
+import {evaluate} from 'mathjs'; 
 
-const math = create(all);
 
 function Calculator() {
   const [expression, setExpression] = useState('');
@@ -19,11 +18,12 @@ function Calculator() {
 
   const evaluateExpression = () => {
     try {
-      setResult(math.evaluate(expression).toString());
+      setResult(evaluate(expression).toString()); // Use the evaluate function
     } catch (error) {
       setResult('Error');
     }
   };
+  
 
   return (
     <div className="calculator">
